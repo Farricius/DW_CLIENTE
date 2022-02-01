@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="04.js"></script>
+    <title>Document</title>
+    <style>
+        p {
+            font-weight: bold;
+        }
+        .container {
+            background-color: azure;
+            padding: 5%;
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <form name="test" id="test" method="POST">
+        <p>1. ¿Cuantos años tiene la Tierra?</p>
+
+        <div>
+          <input type="radio" id="tierra-4500" name="tierra" value="4500">
+          <label id="tierra">4.500 millones de años</label>
+        </div>
+        
+        <div>
+          <input type="radio" id="tierra-5500" name="tierra" value="5500">
+          <label>5.500 millones de años</label>
+        </div>
+        
+        <div>
+          <input type="radio" id="tierra-4000" name="tierra" value="4000">
+          <label>4.000 millones de años</label>
+        </div>
+
+        <div>
+            <input type="radio" id="tierra-4300" name="tierra" value="4300">
+            <label>4.300 millones de años</label>
+        </div>
+        <div id="error-tierra"></div>
+
+        <p>2. ¿Cuál no es un color primario?</p>
+
+        <div>
+          <input type="radio" id="color-amarillo" name="color" value="amarillo">
+          <label>Amarillo</label>
+        </div>
+        
+        <div>
+          <input type="radio" id="color-rojo" name="color" value="rojo">
+          <label>Rojo</label>
+        </div>
+        
+        <div>
+          <input type="radio" id="color-verde" name="color" value="verde">
+          <label id="verde">Verde</label>
+        </div>
+
+        <div>
+            <input type="radio" id="color-azul" name="color" value="azul">
+            <label>Azul</label>
+        </div>
+        <div id="error-color"></div>
+        <br>
+    </form>
+    <div><p>Respuestas correctas:</p><p id="correctas">0</p></div>
+  </div>
+</body>
+</html>
