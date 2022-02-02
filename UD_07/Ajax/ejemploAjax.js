@@ -8,9 +8,10 @@ $(function () {
             "valorCaja1" : valorCaja1,
             "valorCaja2" : valorCaja2
     };
+    
     $.ajax({
             data:  parametros,
-            url:   'ejemplo_ajax_proceso.php',
+            url:   'ejemploAjax.php',
             type:  'post',
             beforeSend: function () {
                     $("#resultado").html("Procesando, espere por favor...");

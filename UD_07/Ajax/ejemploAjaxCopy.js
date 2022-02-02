@@ -2,7 +2,7 @@ $(function () {
     $("#boton").click(function() {
 
     $.ajax({
-            url:   'ejemplo_ajax_proceso_copy.php',
+            url:   'ejemploAjaxCopy.php',
             type:  'post',
             beforeSend: function () {
                     $("#resultado").html("Procesando, espere por favor...");
